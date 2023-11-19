@@ -1,15 +1,7 @@
 # StockSage
 
 ## 1. Introduction
-
-### 1.1 Background
-The Stock Price Predictor project aims to forecast stock prices using historical data obtained from Yahoo Finance. The predictive model implemented in this project utilizes the Support Vector Regressor (SVR) algorithm. Predicting stock prices is a complex task due to various factors influencing the financial markets. The SVR algorithm is chosen for its capability to handle non-linear relationships in data and its effectiveness in regression tasks.
-
-### 1.2 Objectives
-Developed a reliable stock price prediction model.
-Utilized historical stock data from Yahoo Finance.
-Implemented and fine-tuned a Support Vector Regressor (SVR) algorithm.
-Evaluated the model's performance and accuracy.
+The Stock Price Predictor project aims to forecast stock prices using historical data obtained from Yahoo Finance. The predictive model implemented in this project utilizes the Support Vector Regressor (SVR) algorithm. Predicting stock prices is a complex task due to various factors influencing the financial markets. The SVR algorithm is chosen for its capability to handle non-linear relationships in data and its effectiveness in regression tasks. We developed a reliable stock price prediction model, utilized historical stock data from Yahoo Finance, implemented and fine-tuned a Support Vector Regressor (SVR) algorithm as well as evaluated the model's performance and accuracy.
 
 ## 2. Project Overview
 The project focuses on predicting stock prices for a specific set of stocks based on historical data. It does not encompass real-time trading or financial decision-making.
@@ -21,11 +13,7 @@ The dataset used in this project is sourced from Yahoo Finance, consisting of hi
 Prior to training the SVR model, the dataset undergoes preprocessing steps, including handling missing values, scaling features, and splitting the data into training and testing sets. Time-series features and relevant technical indicators may be engineered to enhance the model's predictive power.
 
 ## 5. Model Development
-Support Vector Regression (SVR) is a machine learning algorithm designed for regression tasks. Unlike traditional regression models, SVR focuses on finding a hyperplane that captures the maximum margin of the data points. The key components of SVR include:
-
-Kernel Function: SVR uses a kernel function to transform the input data into a higher-dimensional space, making it easier to find a hyperplane that separates the data points.
-Epsilon (ε)-Insensitive Tube: SVR introduces an ε-insensitive tube around the predicted values, allowing for a certain level of error. Data points within this tube do not contribute to the loss function, providing robustness to outliers.
-Regularization Parameter (C): The regularization parameter, C, controls the trade-off between fitting the training data and maintaining a smooth model. It helps prevent overfitting by penalizing large coefficients.
+Support Vector Regression (SVR) is a machine learning algorithm designed for regression tasks. Unlike traditional regression models, SVR focuses on finding a hyperplane that captures the maximum margin of the data points. SVR uses a kernel function to transform the input data into a higher-dimensional space, making it easier to find a hyperplane that separates the data points. SVR introduces an ε-insensitive tube around the predicted values, allowing for a certain level of error. Data points within this tube do not contribute to the loss function, providing robustness to outliers. The regularization parameter, C, controls the trade-off between fitting the training data and maintaining a smooth model. It helps prevent overfitting by penalizing large coefficients.
 
 The SVR model is trained on the preprocessed dataset, learning the underlying patterns and relationships between input features and stock prices. The model's hyperparameters, including the choice of kernel function and regularization parameter, are tuned to optimize performance.
 
